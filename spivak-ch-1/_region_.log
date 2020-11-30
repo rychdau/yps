@@ -1,0 +1,84 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=prv_ch1exercises 2020.11.29)  29 NOV 2020 20:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**&prv_ch1exercises /AUCTEXINPUT{ _region_.tex }
+(./_region_.tex (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count187
+\l__pdf_internal_box=\box48
+)
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+(/home/ryandau/.emacs.d/elpa/auctex-12.3.1/latex/preview.sty
+Package: preview 2017/04/24 12.3 (AUCTeX/preview-latex)
+ (/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (/home/ryandau/.emacs.d/elpa/auctex-12.3.1/latex/prtightpage.def
+\PreviewBorder=\dimen146
+) (/home/ryandau/.emacs.d/elpa/auctex-12.3.1/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count188
+\hfuzz=\dimen147
+(/home/ryandau/.emacs.d/elpa/auctex-12.3.1/latex/prauctex.cfg)) (/home/ryandau/.emacs.d/elpa/auctex-12.3.1/latex/prfootnotes.def)
+\pr@snippet=\count189
+\pr@box=\box49
+\pr@output=\toks26
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+)  !name(ch1exercises.tex) !offset(392) 
+./_region_.tex:12: Preview: Snippet 1 started.
+<-><->
+      
+l.12 $
+      \mid x \mid - \mid y \mid \leq \mid x-y\mid$
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:12: Preview: Snippet 1 ended.(491520+163840x5807792).
+<-><->
+      
+l.12 $\mid x \mid - \mid y \mid \leq \mid x-y\mid$
+                                                  
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]  !name(ch1exercises.tex) !offset(395) 
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{0pt}
+\newlabel{tocindent2}{0pt}
+\newlabel{tocindent3}{0pt}
+ ) 
+Here is how much of TeX's memory you used:
+ 347 strings out of 479795
+ 6694 string characters out of 5903821
+ 255722 words of memory out of 5000000
+ 16901 multiletter control sequences out of 15000+600000
+ 538923 words of font info for 50 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 29i,4n,29p,187b,116s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on _region_.pdf (1 page, 16280 bytes).
+PDF statistics:
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

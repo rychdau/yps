@@ -1,0 +1,379 @@
+\documentclass{amsart}
+
+\usepackage{enumerate}
+
+\title{Solutions for Chapter 1: Basic Properties of Numbers}
+\author{Ryan Dau}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}[1.]
+  \item
+  \begin{enumerate}[(i)]
+    \item If $ax=a$ for some number $a \neq 0$, then $x=1$.
+  \begin{proof}
+    Suppose $ax=a$ for some number $a \neq 0$. Then there exists its additive inverse $a^{-1}$, so that we have $(a \cdot a^{-1}) \cdot x= a \cdot a^{-1}=1$;
+    thus, $1 \cdot x=1$, so $x=1$.
+  \end{proof}
+\item $x^{2}-y^{2}=(x-y)(x+y)$
+  \begin{proof}
+    $(x-y)(x+y)=x(x-y)+y(x-y)=x^2-xy+xy-y^2=x^2-y^2$
+  \end{proof}
+\item If $x^2=y^2$, then $x=y$ or $x=-y$.
+  \begin{proof}
+    Suppose $x^2=y^2$. This implies that $x^2-y^2=0$. The left-hand side is equal by 1.(ii) to $(x-y)(x+y)=0$. Thus, $x-y=0$ or $x+y=0$, so $x=y$ or $x=-y$.
+  \end{proof}
+\item $x^{3}-y^{3}=(x-y)(x^2+xy+y^2)$
+  \begin{proof} $(x-y)(x^2+xy+y^2)=x^{2}(x-y)+xy(x-y)+y^{2}(x-y)=x^3-x^{2}y+xy^{2}-x^{2}y-xy^{2}-y^{3}=x^{3}-y^{3}$
+  \end{proof}
+\item $x^{n}-y^{n}=(x-y)(x^{n-1}+x^{n-2}y+ \cdots +xy^{n-2}+y^{n-1})$
+  \begin{proof}
+    $(x-y)(x^{n-1}+x^{n-2}y+ \cdots +xy^{n-2}+y^{n-1})=$
+    \[(x-y)\sum_{i=1}^{n}(x^{n-i}y^{i-1})\]
+    \begin{align*}
+      (x-y)\sum_{i=1}^{n}(x^{n-i}y^{i-1}) &=\sum_{i=1}^{n}(x^{(n+1)-i}y^{i-1})-\sum_{i=1}^{n}(x^{n-i}y^{i})\\
+                                          &= x^{n}+\sum_{i=2}^{n}(x^{(n+1)-i}y^{i-1})-\sum_{i=1}^{n-1}(x^{n-i}y^{i})-y^{n}\\
+                                          &= x^{n}+\sum_{i=2}^{n}(x^{(n+1)-i}y^{i-1})-\sum_{j=2}^{n}(x^{(n+1)-j}y^{j-1})-y^{n}\quad (j=i+1)\\
+                                          &= x^{n}+\sum_{i=j=2}^{n}(x^{(n+1)-i}y^{i-1}-x^{(n+1)-j}y^{j-1})
+                                           = x^{n}-y^{n}
+     \end{align*}
+   \end{proof}
+   \pagebreak
+ \item $x^{3}+y^{3}=(x+y)(x^2-xy+y^2)$
+   \begin{proof}
+     Given 1.(iv), let $y_{0}=-y$, where $y_0$ denotes the $y$-variable in that exercise, so that $(x-(-y)=x^{2}+x(-y)+(-y)^{2}$, which is equivalent to $(x+y)=(x^{2}-xy+y^{2})$.
+   \end{proof}
+
+   Note that, from 1.(v), with $y_0=-y$ defined as above, for an odd $n$ $$(x+y)\sum_{i=1}^{n}(x^{n-i}y^{i-1})=x^n-(-y)^{n}=x^n+y^n$$ because $n$ is odd. The terms for the expansion will alternate in sign from positive to negative according as whether the exponentiation of $y$ is even or odd.
+ \end{enumerate}
+\item Note that the ``proof'' assumes that $x=y$, which implies that $x-y=0$. Thus, the multiplicative inverse $(x-y)^{-1}=0^{-1}$ does not exist.
+\item
+  \begin{enumerate}[(i)]
+  \item  $ \frac{a}{b}=\frac{ac}{bc}$, if $b,c \neq 0$.
+    \begin{proof}
+      Suppose $b,c \neq 0$. Then $\frac{a}{b}=ab^-1=(ac)(b^{-1}c^{-1})=(ac)(bc)^{-1}=\frac{ac}{bc}$.
+    \end{proof}
+  \item $\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}$, if $b,d \neq 0$.
+  \begin{proof}
+    Suppose $b,d\neq0$. Then $\frac{ad+bc}{bd}=(ad+bc)(bd)^{-1}=(ad)(bd)^{-1}+(bc)(bd)^{-1}=(ad \cdot b^{-1}c^{-1}) + (bc \cdot b^{-1}d^{-1})=(ab^{-1})+(cd^{-1})=\frac{a}{b}+\frac{c}{d}$
+  \end{proof}
+\item $(ab)^{-1}=a^{-1}b^{-1}$, if $a,b \neq 0$.
+  \begin{proof}
+    First, note that $(ab)(ab)^-1=1$; second, note that $(ab)(a^{-1}b^{-1})=1$. Thus, $(ab)(ab)^{-1}=(ab)(a^{-1}b^{-1})$. Multiplying both sides of the equation by the multiplicative inverse $(ab)^{-1}$, we have $(ab)^{-1}=a^{-1}b^{-1}$.
+
+    This demonstrates that these are two equivalent ways of denoting a unique multiplicative inverse for $ab$.
+  \end{proof}
+\item $\frac{a}{b} \cdot \frac{c}{d}=\frac{ac}{db}$, if $b,d \neq 0$.
+  \begin{proof}
+    Suppose $b, d \neq 0$. Then $\frac{a}{b} \cdot \frac{c}{d}=(ab^{-1}) \cdot (cd^{-1})=(ac)(db)^{-1}=\frac{ac}{db}$
+  \end{proof}
+\item $\left. \frac{a}{b} \right/ \frac{c}{d}=\frac{ad}{bc}$, if $b, c, d \neq 0$.
+  \begin{proof}
+    Suppose $b,c,d \neq 0$. Then $\left. \frac{a}{b} \right/ \frac{c}{d}=(ab^{-1})/(cd^{-1})=(ab^{-1})(cd^{-1})^{-1}=(ab^{-1})(c^{-1}d)=(ad)(bc)^{-1}=\frac{ad}{bc}$.
+  \end{proof}
+\item If $b,d \neq 0$, then $\frac{a}{b}=\frac{c}{d}$ if and only if $ad=bc$. Also determine when $\frac{a}{b}=\frac{b}{c}$.
+  \begin{proof}
+    
+    Suppose in all cases that $b, d \neq 0$.
+    
+    First, suppose $\frac{a}{b}=\frac{c}{d}$. This implies that $ab^{-1}=cd^{-1}$. Multiplying both sides by $b, d$ we have $ad=bc$.
+
+    Second, suppose $ad=bc$. Multiplying both sides by $b^{-1}, d^{-1}$, we $ab^{-1}=cd^{-1}$. This implies that $\frac{a}{b}=\frac{c}{d}$.
+\end{proof}
+Finally, consider the case when $\frac{a}{b}=\frac{b}{a}$. This assertion is equivalent to $a \cdot a = b \cdot b$, which means $a^{2}=b^{2}$. This in turn implies that $a=b$ or $a=-b$, which is the condition under which the original equality holds.
+\end{enumerate}
+\item
+  \begin{enumerate}[(i)]
+  \item $4-x<3-2x$
+
+    $x<-1$
+  \item $5-x^{2}<8$
+
+    $x^{2}>-3$
+
+    all $x$
+
+  \item
+    $5-x^{2}<-2$
+
+    $x^{2}>7$
+
+    $\lvert x \rvert>\sqrt{7}$
+
+    $x>\sqrt{7}$ or $x<-\sqrt{7}$
+
+  \item $(x-1)(x-3)>0$
+
+    $x>3$ or $x<1$
+
+  \item $x^{2}-2x+2>0$
+
+    $x^{2}-2x+1+1>0$
+
+    $(x-1)^{2}+1>0$
+
+    $(x-1)^{2}>-1$, and $(x-1)^{2} \geq 0$, so all $x$.
+
+    \item $x^{2}+x+1>2$
+
+      $x^{2}+x+\frac{1}{4}>\frac{5}{4}$
+
+      $(x+\frac{1}{2})^{2}>\frac{5}{4}$
+
+      $x>\frac{-1+\sqrt{5}}{2}$ or $x<\frac{-1-\sqrt{5}}{2}$
+
+    \item $x^{2}-x+10>16$
+
+      $x^{2}-x-6=(x-3)(x+2)=0$
+
+      $x>3$ or $x<-2$
+
+    \item $x^{2}+x+1>0$
+
+      $x^{2}+x+\frac{1}{4}-\frac{1}{4}+1>0$
+
+      $(x+\frac{1}{2})^{2}>-\frac{3}{4}$
+
+      all $x$
+
+    \item $(x- \pi )(x+5)(x-3)>0$
+
+      $x>\pi$ or $-5<x<3$
+
+    \item $(x-\sqrt[3]{2})(x-\sqrt{2})>0$
+
+      $x>\sqrt{2}$ or $x<\sqrt[3]{2}$.
+
+    \item $2^{x}<8$
+
+      $x<3$
+    \item $x+3^{x}<4$
+
+      $x<1$
+
+    \item $\frac{1}{x}+\frac{1}{1-x}>0$
+
+      $\frac{1}{x}+\frac{1}{1-x}=\frac{1}{x(1-x)}>0$
+
+      $0<x<1$
+
+    \item $\frac{x-1}{x+1}>0$
+
+      $x<-1$ or $x>1$
+    \end{enumerate}
+
+  \item
+    \begin{enumerate}[(i)]
+    \item If $a<b$ and $c<d$, then $a+c<b+d$.
+      \begin{proof}
+        Suppose $a<b$ and $c<d$. Then $b-a>0$ and $d-c>0$, so $b-a$ and $d-c$ are in $P$. But then $(b-a)+(d-c)=(b+d)-a-c=(b+d)-(a+c)$ is in $P$. Thus, $a+c<b+d$.
+      \end{proof}
+    \item If $a<b$, then $-b<-a$.
+      \begin{proof}
+        Suppose $a<b$. Then $b-a>0$ so b-a=-$(-b)-(-(-a))=(-a)-(-b)$ is in $P$. Thus, $-b<-a$.
+      \end{proof}
+
+    \item If $a<b$ and $c>d$, then $a-c<b-d$.
+\begin{proof}
+      Suppose $a<b$ and $ c>d$. Then $c>d$ implies $-d<-c$, which implies in conjunction with our hypothesis that $a+(-c)=a-c<b-d=b+(-d)$.
+    \end{proof}
+  \item If $a<b$ and $c>0$, then $ac<bc$.
+    \begin{proof}
+      Suppose $a<b$ and $c>0$. This implies that $b-a, c(=c-0)$ are in $P$, which means that $c(b-a)=bc-ac$ is in $P$. Thus, $ac<bc$.
+    \end{proof}
+  \item If $a<b$ and $c<0$, then $ac>bc$.
+    \begin{proof}
+      Suppose $a<b$ and $c<0$. Then $0<-c$, so $a(-c)<b(-c)$, which implies that $ac>bc$.
+    \end{proof}
+  \item If $a>1$, then $a^{2}>a$.
+    \begin{proof}
+      Suppose $a>1$. Note that $1>0$ and thus $a>0$. $a>1$ implies that $a-1, a$ are in $P$. Thus, $a^{2}-a$ is in $P$, which means that $a^{2}>a$.
+    \end{proof}
+  \item If $0<a<1$, then $a^{2}<a$.
+    \begin{proof}
+      Suppose $0<a<1$. Then $1-a, a$ are in $P$, so $a-a^{2}$ is in P, which means that $a>a^{2}$.
+    \end{proof}
+  \item If $0 \leq a<b$ and $0 \leq c<d$, then $ac<bd$.
+    \begin{proof}
+      If $a=0$ or $c=0$ the proof is trivial. Thus, suppose $a,b \neq 0$. Then $0<a<b$ and $0<c<d$; in particular, $c>0$, so $ac<bc$. Similarly, $b>0$, so $bc<bd$. Thus, $ac<bc<bd$, so $ac<bd$.
+    \end{proof}
+  \item If $0 \leq a<b$, then $a^{2}<b^{2}$.
+    \begin{proof}
+      Suppose $0 \leq a<b$. Then we have immediately from 5.(vii) that $a^{2}<b^{2}$, letting $c=a$ and $d=a$.
+    \end{proof}
+  \item If $a, b \geq 0$ and $a^{2}<b^{2}$, then $a<b$.
+    \begin{proof}
+    Suppose $a, b \geq 0$ and $a^{2}<b^{2}$. Suppose $a \not<b$; this is equivalent to $a \geq b$.
+
+    First, take the case $a=b$. This implies that $a^{2}=b^{2}$, contradicting our hypothesis.
+
+    Second, take the case $a>b$. This implies, in cojunction with 5.(ix), that $a^{2}>b^{2}$, contradicting our hypothesis.
+
+    Thus, it must be that $a<b$.\end{proof}
+  \end{enumerate}
+\item
+  \begin{enumerate}[(a)]
+  \item If $0 \leq x<y$, then $x^{n}<y^{n}$ for $n=1,2,3, \ldots$.
+    \begin{proof}
+      We will use induction on $n$.
+
+      First, suppose that $0 \leq x<y$. This immediately implies the base case $n=1$, $x^{1}=x<y^{1}=y$.
+
+      Next, assume the inductive hypothesis: $x^{n}<y^{n}$. We must show that $x^{n+1}<y^{n+1}$. First, we have that $x \cdot x^{n}=x^{n+1}<x \cdot y^{n}$. Second, since $y>0$ and thus $y^{n}>0$, we have that $x cdot y^{n}<y^{n} \cdot y=y^{n+1}$. Thus, $x^{n+1}<x \cdot y^{n}<y^{n+1}$, so $x^{n+1}<y^{n+1}$. Thus, the inequality holds for all $n$.
+    \end{proof}
+  \item If $x<y$ and $n$ is odd, then $x^{n}<y^{n}$.
+    \begin{proof}
+      Let $n$ be odd, and suppose $x<y$.
+
+      First, suppose $x, y \geq 0$. This implies, in conjunction with 6.(a), that $x^{n}<y^{n}$.
+
+      Second, suppose $x,y \leq 0$. This implies by the trichotomy law that $-x, -y \geq 0$, so $-y<-x$, which implies in conjunction with 6.(a) that $(-y)^{n}<(-x)^{n}$. Since $n$ is odd, we have $-y^{n}<-x^{n}$, which is equivalent to $x^{n}<y^{n}$.
+
+      Finally, suppose $x \leq 0 < y$. Since $n$ is odd and $x$ is negative (the case is trivial when $x=0$), $x^{n}$ will be negative for every odd $n$. Similarly, $y$ will be positive for any odd $n$. Thus, $x^{n} \leq 0 <y^{n}$, so $x^{n}<y^{n}$.
+
+      Thus, in all cases, $x^{n}<y^{n}$.
+    \end{proof}
+  \item If $x^{n}=y^{n}$ and $n$ is odd, then $x=y$.
+\begin{proof}
+    Suppose $x^{n}=y^{n}$ and $n$ is odd. Let us suppose that $x \neq y$, i.e., that $x>y$ or $x<y$.
+
+    First, take $x>y$. This implies that $x^{n}>y^{n}$, contradicting our hypothesis.
+
+    Second, take $x<y$. This implies that $x^{n}<y^{n}$, contradicting our hypothesis.
+
+    Thus, $x=y$.
+  \end{proof}
+\item If $x^{n}=y^{n}$ and $n$ is even, then $x=y$ or $x=-y$.
+  \begin{proof}
+    Suppose in all cases that $x^{n}=y^{n}$
+
+    First, suppose $x, y \geq 0$.Suppose further that $x \neq y$. Without loss of generality, suppose $x>y$. This implies that $x^{n}>y^{n}$, contradicting our hypothesis (and likewise for $x<y$). Thus, when $x, y \geq 0$, $x=y$.
+
+    Second, suppose $x, y \leq 0$. Suppose further that $x \neq y$. This implies that $-x, -y \geq 0$. $x \neq y$. Without loss of generality, suppose $-x>-y$. This implies that $(-x)^n>(-y)^{n}$, and since $n$ is even, $x^{n}>y^{n}$, contradicting our hypothesis. Thus, when $x, y \leq 0$, $x=y$.
+
+    Third, suppose $x$ and $y$ are of opposite signs. Suppose $x \neq y$. Without loss of generality, suppose $x<0<y$. Thus, $0<-x,y$. Without loss of generality again, suppose $-x<y$. But then $(-x)^{n}=x^{n}<y^{n}$, contradicting our hypothesis. Thus, when $x$ and $y$ are of opposite signs, $x=-y$.
+  \end{proof}
+  \end{enumerate}
+
+\item If $0<a<b$, then $a<\sqrt{ab}<\frac{a+b}{2}<b$.
+  \begin{proof}
+    Suppose $0<a<b$.
+
+    Noting that $b>0$, we have that $a+b<b+b=2b$, which implies that $\frac{a+b}{2}<b$.
+
+    Noting that $a>0$, we have that $a \cdot a = a \cdot b$, which implies that $a<\sqrt{ab}$.
+
+    Finally, noting that $(a-b)^{2}=(a-2ab+b^{2})>0
+    $, we have that $a+2ab+b^{2}>4ab$, which implies that $(a+b)^{2}>4ab$, so $a+b>2\sqrt{ab}$. Thus, $\frac{a+b}{2}\sqrt{ab}$.
+  \end{proof}
+\item Suppose that P10--P12 are replaced by
+  \begin{enumerate}
+\item[(P$'$10)] For any numbers $a$ and $b$ one, and only one, of
+  the following holds:
+  \begin{enumerate}
+  \item[i.] $a=b$
+  \item[ii.] $a<b$
+  \item[iii.] $b<a$.
+  \end{enumerate}
+\item[(P$'$11)] For any numbers $a$, $b$, and $c$, if $a<b$ and $b<c$, then
+  $a<c$.
+\item[(P$'$12)] For any numbers $a$, $b$, and $c$, if $a<b$, then $a+c<b+c$.
+\item[(P$'$13)] For any numbers $a$, $b$, and $c$, if $a<b$ and $0<c$,
+  then $ac<bc$.
+\end{enumerate}
+
+Show that P10--P12 can then be deduced as theorems.
+
+\begin{proof}
+  First, by two applications of (P$'$11) we have, for numbers $a$,
+  $b$, $c$, and $d$, with $a<b$ and $c<d$, $a+c<b+c$ and $b+c<b+d$, which by
+  (P$'$11) implies $a+c<b+d$. Note in particular that when $a=0$ and $b=0$,
+  we have that $0<b$ and $0<d$ implies that $0<b+d$, which is of course
+  (P11).
+
+  Second, suppose (P10) were not to hold: this would imply that more than
+  one of $a=0$, $a$ is in the collection $P$, and $-a$ is in the collection $P$
+  would hold. Thus, using the proof above, let $a<0$ and $-a<0$, noting that
+  both can hold under the negation of (P10): we have $-a$ in the collection
+  $P$ and $a$ in the collection $P$. Then the above proof results in $0=-a+a<0$,
+  or $0<0$. But this contradicts the postulate (P$'$10): note that we have
+  $0=0$ by the properties of equality, and $0<0$, but only one of the three
+  conditions can hold. Thus, our assumption that (P10) does not hold leads
+  to an absurdity, and we can conclude that (P10) does hold.
+
+  Third, suppose we have numbers $a$, $b$, $c$ such that $a<b$ and $c<d$ with
+  $a>0$ and $c>0$. Then, by two applications of (P$'$13) we have $ac<bc$ and
+  $bc<bd$, which by (P$'$11) implies that $ac<bd$. Note that, since $a,c>0$ we have that $b,d>0$. Similarly, since $0<a$ an $0<c$, we have that $b \cdot 0=0<ac$. Thus, $0<ac$, and $ac<bd$, so $0<bd$. Put differently, we have shown that when $0<b,d$, then $0<b \cdot d$.
+
+We can conclude that from assumptions concerning the behavior of inequalities over numbers, we can deduce the trichotomy law and closure under addition and multiplication as theorems.
+  
+\end{proof}
+\item
+  \begin{enumerate}[(i)]
+  \item $\lvert \sqrt{2}+\sqrt{3}-\sqrt{5}+\sqrt{7} \rvert = \sqrt{2}+\sqrt{3}-\sqrt{5}+\sqrt{7}$
+  \item $\lvert (\lvert a+b \rvert-\lvert a \rvert - \lvert b \rvert) \rvert=\lvert a+b\rvert + \lvert a \rvert + \lvert b \rvert$.
+  \item $\lvert(\lvert a+b \rvert + \lvert c \rvert - \lvert a+b+c \rvert)\rvert$
+  \item $\lvert x^{2}-2xy+7^{2}\rvert= \lvert (x-y)^{2} \rvert = (x-y)^{2} = x^{2}-2xy-y^{2}$
+    \item $\lvert (\lvert \sqrt{2}+ \sqrt{3} \rvert - \lvert \sqrt{5}-\sqrt{7}\rvert)\rvert= \lvert \sqrt{2}+\sqrt{3}+\sqrt{5}-\sqrt{7} \rvert= \sqrt{2}+\sqrt{3}+\sqrt{5}-\sqrt{7}$
+    \end{enumerate}
+
+  \item
+    \begin{enumerate}[(i)]
+  \item $\lvert a+b \rvert - \lvert b \rvert$
+    \begin{align*}
+      a&, \quad \text{if}\quad a+b\geq 0, b\geq0 \\
+      a+2b&, \quad \text{if}\quad a+b \geq 0, b \leq 0\\
+      -a&, \quad \text{if}\quad a+b\leq0, b\geq0\\
+      2b-a&, \quad \text{if}\quad a+b \leq 0, b\leq0
+    \end{align*}
+  \item $\lvert ( \lvert x \rvert-1)\rvert $
+    \begin{align*}
+      x-1&, \quad \text{if}\quad x\geq 1\\
+      -x-1&, \quad \text{if}\quad x\leq -1\\
+      1-x&, \quad \text{if}\quad 0\leq x \leq1\\
+      1+x&, \quad \text{if}\quad -1 \leq x \leq0
+    \end{align*}
+    
+  \item $\lvert x \rvert-\lvert x^{2} \rvert=\lvert x \rvert -x^{2}$
+    \begin{align*}
+      x-x{^2}&, \quad \text{if}\quad x\geq0\\
+      -x-x^{2}&, \quad \text{if}\quad x \leq0
+    \end{align*}
+  \item $a-\lvert (a - \lvert a \rvert)\rvert$
+    \begin{align*}
+      a&, \quad \text{if}\quad a\geq0\\
+      3a&, \quad \text{if}\quad a\leq0
+    \end{align*}
+  \end{enumerate}
+\item
+  \begin{enumerate}[(i)]
+  \item $\lvert x-3 \rvert=8$
+    
+    $x=11$ or $x=-5$
+  \item $\lvert x-3 \rvert <8$
+    
+    $-5<x<11$
+  \item $\lvert x+4 \rvert <2$
+    
+    $-6<x<-2$
+  \item $\lvert x-1 \rvert + \lvert x-2 \rvert>1$
+    
+    $x<1$ or $x>2$
+  \item $\lvert x-1 \rvert + \lvert x+1 \rvert<2$
+    
+    $-1<x<1$
+  \item $\lvert x-1 \rvert + \lvert x+1 \rvert <1$
+    
+    no $x$
+  \item $\lvert x-1 \rvert \cdot \lvert x+1 \rvert = 0$
+    
+    $x=1$ or $x=-1$
+  \item $\lvert x-1 \rvert \cdot \lvert x+2 \rvert=3$
+    
+    $x=\frac{-1-\sqrt{21}}{2}$
+    \end{enumerate}
+  \end{enumerate}
+\end{document}
